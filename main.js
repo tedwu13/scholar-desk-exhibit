@@ -1,3 +1,3 @@
 $(function(){
-    $('#colors-sketch').sketch();
+    $('#simple_sketch').sketch();
 });

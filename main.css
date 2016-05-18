@@ -45,17 +45,14 @@ canvas {
     margin-left: 2%;
 }
 
-button {
-    background-color: blue;
-    padding: 0.5em;
-    font-size: 1.0em;
+#clear {
+    background-color: #f44336;
     color: white;
-    text-align: center;
-    text-transform: uppercase;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
     display: inline-block;
-    border: none;
     margin: 1%;
-
 }
 
 

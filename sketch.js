@@ -61,6 +61,9 @@ var __slice = Array.prototype.slice;
           if ($(this).attr('data-download')) {
             sketch.download($(this).attr('data-download'));
           }
+          if ($(this).attr('data-clear')) {
+                      sketch.clear();
+          }
           return false;
         });
       }
@@ -73,6 +76,10 @@ var __slice = Array.prototype.slice;
       }
       mime = "image/" + format;
       return window.open(this.el.toDataURL(mime));
+    };
+    Sketch.prototype.clear = function() {
+          this.actions = [];
+          return this.redraw();
     };
     Sketch.prototype.set = function(key, value) {
       this[key] = value;

@@ -6,5 +6,7 @@ $(function(){
         if (inkStoneTouched) {
             $('#simple_sketch').sketch();
         }
+
+        document.getElementById("instructions").innerHTML = "FOLLOW THE STROKE ORDER ACCORDING TO ANIMATION";
     });
 });

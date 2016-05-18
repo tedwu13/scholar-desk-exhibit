@@ -7,10 +7,11 @@ canvas {
 #instructions {
     margin: 0 auto;
     width: 50%;
-    height: 4em;
+    height: 2em;
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #inkstone {
     width: 120px;
@@ -34,5 +35,12 @@ canvas {
     border-radius: 10%;
 }
 
+.options {
+    display: inline-block;
+    margin-left: 2%;
+}
 
+#clear {
+
+}
 

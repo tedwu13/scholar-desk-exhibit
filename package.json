@@ -1,7 +1,7 @@
 {
   "name": "scholar-desk-exhibit",
   "version": "1.0.0",
-  "description": "Scholar Desk Exhibit using canvas technology",
+  "description": "Scholar Desk Exhibit using canvas technology and sketch.js",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tedwu13/scholar-desk-exhibit.git"
+  },
+  "engines": {
+    "node": "0.12.12",
+    "npm": "3.5.2"
   },
   "author": "Ted Wu",
   "license": "ISC",

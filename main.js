@@ -1,0 +1,3 @@
+$(function(){
+    $('#colors-sketch').sketch();
+});

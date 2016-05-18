@@ -2,6 +2,7 @@ canvas {
     margin: 0 auto;
     display: block;
     border: 1px solid black;
+    background: url("background.jpg") no-repeat center center;"
 }
 
 #instructions {
@@ -35,12 +36,13 @@ canvas {
     border-radius: 10%;
 }
 
-.options {
+.color {
+    display: inline-block;
+    margin-left: 2%;
+}
+.size {
     display: inline-block;
     margin-left: 2%;
 }
 
-#clear {
-
-}
 

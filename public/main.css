@@ -1,3 +1,13 @@
+body {
+    padding: 20px;
+}
+
+section {
+    margin: 10px;
+}
+
+
+
 canvas {
     display: block;
     border: 1px solid black;
@@ -5,18 +15,13 @@ canvas {
 }
 
 #instructions {
-    margin: 0 auto;
-    width: 50%;
-    height: 2em;
     font-size: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 #inkstone {
     width: 120px;
     height: 230px;
-    float: left;
     display: inline-block;
     -webkit-transition: all 1s ease;
          -moz-transition: all 1s ease;
@@ -26,11 +31,13 @@ canvas {
 }
 
 #yue {
-    float: right;
-    margin-right: 1%;
+
 }
 
-#inkstone:hover{ 
+#drawing {
+    padding-top: 20px;
+}
+#inkstone:hover{
     border: 5px solid #000;
     border-radius: 10%;
 }
@@ -39,6 +46,7 @@ canvas {
     display: inline-block;
     margin-left: 2%;
 }
+
 .size {
     display: inline-block;
     margin-left: 2%;
@@ -48,7 +56,7 @@ canvas {
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
-    text-align: center; 
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 1%;

@@ -5,7 +5,7 @@ $(function(){
         if (inkStoneTouched) {
             $('#simple_sketch').sketch();
         }
-        document.getElementById("instructions").innerHTML = "FOLLOW THE STROKE ORDER ACCORDING TO ANIMATION";
+        document.getElementById("instructions_text").innerHTML = "Follow the stroke order according to the animation";
     });
 
     var canvas = document.getElementById("simple_sketch");

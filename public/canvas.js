@@ -1,4 +1,11 @@
 var inkStoneTouched = false;
+$(document).ready(function() {
+  $('#done').magnificPopup({
+    type: 'inline',
+    midClick: true
+  });
+});
+
 $(function(){
     $('#inkstone').click(function() {
         inkStoneTouched = true;
@@ -14,3 +21,4 @@ $(function(){
         context.clearRect(0, 0, canvas.width, canvas.height);
     });
 });
+

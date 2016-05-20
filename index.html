@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Scholar Desk Exhibit</title>
+    <link rel="stylesheet" href="magnific-popup.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script type="text/javascript" src="sketch.js"></script>
     <script type="text/javascript" src="canvas.js"></script>
+    <script src="jquery.magnific-popup.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   </head>
@@ -68,16 +70,25 @@
 
     <section id="finishing">
         <div class="row">
-            <div class="empty col-md-10">
+            <div class="empty col-md-9">
             </div>
             <div class="clear col-md-1">
                 <a href='#simple_sketch' data-clear='true' id="clear">Clear</a>
             </div>
-            <div class="canvas col-md-1">
-                <a href="#simple_sketch" data-download="png" id="save">Save</a>
+            <div class="col-md-1">
+                <a href="#simple_sketch" data-download="png" id="save">Download</a>
+            </div>
+            <div class="col-md-1">
+                <a href="#simple_sketch" data-mfp-src="#test-popup" class="open-popup-link" id="done">Done</a>
             </div>
         </div>
     </section>
+
+    <div id="test-popup" class="white-popup mfp-hide">
+        <h4>Meaning of the character 'Moon'</h4>
+        <p>In Chinese minds, the moon is associated with gentleness and brightness, expressing the beautiful yearnings of the Chinese. On the 15th day of the 8th month of the lunar calendar, the moon is full and it is time to mark the Moon Festival, or the Mid-Autumn Festival. The round shape symbolizes family reunion. Therefore, the day is a holiday for family members to get together and enjoy the full moon - an auspicious token of abundance, harmony, and luck.</p>
+    </div>
+
 
   </body>
 </html>

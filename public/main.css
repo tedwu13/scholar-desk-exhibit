@@ -30,10 +30,6 @@ canvas {
               transition: all 1s ease;
 }
 
-#yue {
-
-}
-
 #drawing {
     padding-top: 20px;
 }
@@ -66,11 +62,18 @@ canvas {
     background-color: green;
     color: white;
     padding: 14px 25px;
-    text-align: center; 
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 1%;
 }
 
-
-
+#done {
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1%;
+}

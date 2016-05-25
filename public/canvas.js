@@ -1,13 +1,13 @@
 var inkStoneTouched = false;
 $(document).ready(function() {
-  $('#done').magnificPopup({
-    type: 'inline',
-    // Delay in milliseconds before popup is removed
-    removalDelay: 300,
-    // Class that is added to popup wrapper and background
-    // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-fade'
-  });
+    $('#done').magnificPopup({
+        type: 'inline',
+        // Delay in milliseconds before popup is removed
+        removalDelay: 300,
+        // Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade'
+      });
 });
 
 $(function(){
@@ -17,6 +17,7 @@ $(function(){
             $('#simple_sketch').sketch();
         }
         document.getElementById("instructions_text").innerHTML = "Follow the stroke order according to the animation";
+        $('.hidden').fadeIn().removeClass('hidden');
     });
 
     var canvas = document.getElementById("simple_sketch");

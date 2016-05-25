@@ -62,7 +62,7 @@ var __slice = Array.prototype.slice;
             sketch.download($(this).attr('data-download'));
           }
           if ($(this).attr('data-clear')) {
-                      sketch.clear();
+            sketch.clear();
           }
           return false;
         });

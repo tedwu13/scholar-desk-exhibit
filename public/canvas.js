@@ -28,7 +28,7 @@ $(function(){
 
     var popup = document.getElementById('content');
     $('#next').click(function() {
-        popup.innerHTML = "<h4>Evolution of the character</h4> <img src='img/yue.gif'>";
+        popup.innerHTML = "<h4 id='header'>Evolution of the character</h4> <img src='img/yue.gif'>";
     });
 
     $("#play_button").click(function() {

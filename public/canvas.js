@@ -30,5 +30,10 @@ $(function(){
     $('#next').click(function() {
         popup.innerHTML = "<h4>Evolution of the character</h4> <img src='img/yue.gif'>";
     });
+
+    $("#play_button").click(function() {
+        var audio = new Audio('http://www.hantrainerpro.de/resources/pronunciations/yue4.mp3');
+        audio.play();
+    });
 });
 

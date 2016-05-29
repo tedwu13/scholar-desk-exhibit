@@ -1,5 +1,12 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body {
     padding: 0.5em;
+    height: 100%;
+    width: 100%;
 }
 
 section {
@@ -30,6 +37,7 @@ canvas {
     font-size: 1.5em;
     font-family: 'Permanent Marker', Helvetica, Arial, sans-serif;
     margin: 0em;
+    text-align: center;
 }
 
 #inkstone {
@@ -46,39 +54,36 @@ canvas {
 #drawing {
     padding-top: 0em;
     margin: 0em;
+    height: 80%;
 }
 #inkstone:hover{
     border: 5px solid #000;
     border-radius: 10%;
 }
 
-.color {
-    display: inline-block;
-    margin-left: 2%;
+#evolution{
+    width: 90%;
 }
 
-.size {
-    display: inline-block;
-    margin-left: 2%;
+#main-row{
+    margin: 0em;
+    height: 100%;
+}
+#main-row div{
+    margin: 0em;
+    padding: 0em;
 }
 
+.canvas{
+    height: 100%;
+}
 canvas#simple_sketch {
-    margin-left: -5px;
+    width: 100%;
 }
 
-.gif {
-    margin-left: -38px;
+.gif img{
+    width: 100%;
 }
-/*
-.button {
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 1%;
-}
-*/
 
 p#text {
     font-family: Lato;

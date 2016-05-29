@@ -15,6 +15,8 @@ $(function(){
         inkStoneTouched = true;
         if (inkStoneTouched) {
             $('#simple_sketch').sketch();
+            $('canvas').css('height', $('#main-row').height().toString() + 'px');
+            $('canvas').attr('height', $('#main-row').height().toString() + 'px');
         }
         document.getElementById("instructions_text").innerHTML = "Follow the stroke order according to the animation";
         $('.hidden').fadeIn().removeClass('hidden');

@@ -13,7 +13,7 @@ section {
     margin: 10px;
 }
 
-h4#header { 
+h4#header {
     font-family: Lato;
     font-size: 2.5em;
     font-weight: 400;
@@ -31,6 +31,7 @@ canvas {
 
 #buttons{
     float: right;
+    margin-right: 45px;
 }
 
 #instructions {
@@ -42,23 +43,13 @@ canvas {
 
 #inkstone {
     width: 120px;
-    height: 230px;
     display: inline-block;
-    -webkit-transition: all 1s ease;
-         -moz-transition: all 1s ease;
-           -o-transition: all 1s ease;
-          -ms-transition: all 1s ease;
-              transition: all 1s ease;
 }
 
 #drawing {
     padding-top: 0em;
     margin: 0em;
     height: 80%;
-}
-#inkstone:hover{
-    border: 5px solid #000;
-    border-radius: 10%;
 }
 
 #evolution{

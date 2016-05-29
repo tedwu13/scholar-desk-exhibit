@@ -1,4 +1,6 @@
 var inkStoneTouched = false;
+var current_width;
+var interval = setInterval(decreaseWidth, 1000);
 $(document).ready(function() {
     $('#done').magnificPopup({
         type: 'inline',
@@ -11,9 +13,16 @@ $(document).ready(function() {
 });
 
 $(function(){
+    current_width = parseInt($('#brush-width').attr('data-size'));
+
     $('#inkstone').click(function() {
         inkStoneTouched = true;
         if (inkStoneTouched) {
+            current_width += 5;
+            if (current_width > 30) {
+                current_width = 30;
+            }
+            $('#brush-width').attr('data-size', current_width);
             $('#simple_sketch').sketch();
             $('canvas').css('height', $('#main-row').height().toString() + 'px');
             $('canvas').attr('height', $('#main-row').height().toString() + 'px');
@@ -39,3 +48,13 @@ $(function(){
     });
 });
 
+function decreaseWidth(){
+    console.log(current_width);
+    if(current_width < 3) {
+        current_width = 3;
+        $('#brush-width').attr('data-size', current_width);
+    }
+    current_width -= 1;
+    $('#brush-width').attr('data-size', current_width);
+    return current_width;
+}

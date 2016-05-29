@@ -1,5 +1,5 @@
 body {
-    padding: 20px;
+    padding: 0.5em;
 }
 
 section {
@@ -22,9 +22,14 @@ canvas {
     background: url("img/background.jpg") no-repeat center center;"
 }
 
+#buttons{
+    float: right;
+}
+
 #instructions {
     font-size: 1.5em;
     font-family: 'Permanent Marker', Helvetica, Arial, sans-serif;
+    margin: 0em;
 }
 
 #inkstone {
@@ -39,7 +44,8 @@ canvas {
 }
 
 #drawing {
-    padding-top: 20px;
+    padding-top: 0em;
+    margin: 0em;
 }
 #inkstone:hover{
     border: 5px solid #000;
@@ -63,7 +69,7 @@ canvas#simple_sketch {
 .gif {
     margin-left: -38px;
 }
-
+/*
 .button {
     color: white;
     padding: 14px 25px;
@@ -72,22 +78,7 @@ canvas#simple_sketch {
     display: inline-block;
     margin: 1%;
 }
-
-#clear {
-    background-color: #f44336;
-}
-
-#save {
-    background-color: green;
-}
-
-#done {
-    background-color: blue;
-}
-
-#play_button {
-    background-color: orange;
-}
+*/
 
 p#text {
     font-family: Lato;

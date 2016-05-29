@@ -43,21 +43,20 @@
 
     <section id="finishing" class="hidden">
         <div class="row">
-            <div class="empty col-sm-7">
+            <div id="buttons" class="btn-group" role="group">
+                <a class="button" href='#simple_sketch' data-clear='true' id="clear">
+                    <button type="button" class="btn btn-danger">Clear</button>
+                </a>
+                <a class="button" href="#simple_sketch" data-download="png" id="save">
+                    <button type="button" class="btn btn-primary">Download</button>
+                </a>
+                <a class="button" href="#simple_sketch" data-mfp-src="#test-popup" class="open-popup-link" id="done">
+                    <button type="button" class="btn btn-success">Done</button>
+                </a>
+                <a class="button" id="play_button">
+                    <button type="button" class="btn btn-info">Pronunciation</button>
+                </a>
             </div>
-            <div class="clear col-sm-1">
-                <a class="button" href='#simple_sketch' data-clear='true' id="clear">Clear</a>
-            </div>
-            <div class="col-sm-1">
-                <a class="button" href="#simple_sketch" data-download="png" id="save">Download</a>
-            </div>
-            <div class="col-sm-1">
-                <a class="button" href="#simple_sketch" data-mfp-src="#test-popup" class="open-popup-link" id="done">Done</a>
-            </div>
-            <div class="col-sm-1">
-                <a class="button" id="play_button">Pronunciation</a>
-            </div>
-            
         </div>
     </section>
 

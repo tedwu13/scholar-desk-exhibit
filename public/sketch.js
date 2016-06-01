@@ -63,6 +63,7 @@ var __slice = Array.prototype.slice;
           }
           if ($(this).attr('data-clear')) {
             sketch.clear();
+            sketch.stopPainting();
           }
           return false;
         });

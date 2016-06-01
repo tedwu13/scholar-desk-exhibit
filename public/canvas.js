@@ -36,7 +36,8 @@ $(function(){
     var canvas = document.getElementById("simple_sketch");
     var context = canvas.getContext("2d");
     $('#clear').click(function() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
+        //context.clearRect(0, 0, canvas.width, canvas.height);
+        //sketch.clear();
     });
 
     var popup = document.getElementById('content');

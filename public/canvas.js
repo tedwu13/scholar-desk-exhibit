@@ -1,4 +1,5 @@
 var inkStoneTouched = false;
+var drawInit = false
 var current_width;
 //var interval = setInterval(decreaseWidth, 1000);
 $(document).ready(function() {
@@ -17,20 +18,25 @@ $(function(){
     current_width = 10;
 
     $('#inkstone').click(function() {
-        inkStoneTouched = true;
-        if (inkStoneTouched) {
-            /*
-            current_width += 5;
-            if (current_width > 30) {
-                current_width = 30;
-            }*/
-            $('#brush-width').attr('data-size', current_width);
-            $('#simple_sketch').sketch();
-            $('canvas').css('height', $('#main-row').height().toString() + 'px');
-            $('canvas').attr('height', $('#main-row').height().toString() + 'px');
+        if (!drawInit){
+            inkStoneTouched = true;
+            if (inkStoneTouched) {
+                /*
+                current_width += 5;
+                if (current_width > 30) {
+                    current_width = 30;
+                }*/
+                $('#brush-width').attr('data-size', current_width);
+                $('#simple_sketch').sketch();
+                $('canvas').css('height', $('#main-row').height().toString() + 'px');
+                $('canvas').attr('height', $('#main-row').height().toString() + 'px');
+            }
+            document.getElementById("instructions_text").innerHTML = "Follow the stroke order according to the animation";
+            $('.hidden').fadeIn().removeClass('hidden');
+            drawInit = true;
+        }else{
+            console.log("skip");
         }
-        document.getElementById("instructions_text").innerHTML = "Follow the stroke order according to the animation";
-        $('.hidden').fadeIn().removeClass('hidden');
     });
 
     var canvas = document.getElementById("simple_sketch");
